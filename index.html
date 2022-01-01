@@ -28,6 +28,16 @@
                 }
             });
     </script>
+    <script>
+        $(document).on('keydown', function(e) {
+            // if(e.ctrlKey && (e.key == "p" || e.charCode == 16 || e.charCode == 112 || e.keyCode == 80) ){
+            //     alert("Sorry, you are not authorized to take a Print");
+                e.cancelBubble = true;
+                e.preventDefault();
+                e.stopImmediatePropagation();
+            }
+        });
+    </script>
 </head>
 
 <body oncontextmenu="return false;"  onmousedown = 'return false;' onselectstart = 'return false;' >
