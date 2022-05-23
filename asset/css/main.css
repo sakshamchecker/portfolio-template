@@ -857,7 +857,9 @@ a:hover{
   width: 34px;
   height: 34px;
 }
-
+#smallbox {
+    cursor: pointer;
+}
 h1{
   display: table-cell;
   vertical-align: middle;
