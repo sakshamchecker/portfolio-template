@@ -1125,3 +1125,72 @@ border-color: #125688;
 .cardd:nth-child(even) > .info > .titlee::before {
   right: -45px;
 }
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Apply the blur effect */
+}
+
+.popup-content {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.popup-text {
+  text-align: center;
+}
+
+.popup-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.popup-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.popup-text .resume {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.popup-text .close {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.popup-text .close:hover {
+  background-color: #333;
+}

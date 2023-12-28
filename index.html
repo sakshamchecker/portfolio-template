@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="asset/css/main.css" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="AI-ML Enthusiast">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="keywords" content="HTML, CSS, Saksham Checker">
     <meta name="author" content="Saksham Checker">
     <meta name='image' content='asset/img/Portrait.png'>
     <script src="https://kit.fontawesome.com/4019246ab4.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
 
         <script>
             $(function () {
-                setTimeout(function () { goToSecondTab(); }, 5000);
+                setTimeout(function () { goToSecondTab(); }, 3000);
                 function goToSecondTab() {
                     window.location.hash = '#about';
                 }
@@ -42,17 +42,44 @@
 
 <body oncontextmenu="return false;"  onmousedown = 'return false;' onselectstart = 'return false;' >
 
+    <!--add a Popup displaying hello on website open in a box , in center with two options, first to download resume, other to continue to website-->
+    <!--Blur out the content behind when the popup is open-->
+  
+    <div class="popup">
+        <div class = "popup-background"> </div>
+        <div class="popup-content">
+            <div class="popup-text">
+                <h1>Hello!</h1>
+                <p>Thank you for visiting. In order to access my latest projects, kindly download my updated Resume/CV</p>
+                <a href="/resume.pdf" class="resume">Download Latest Resume</a>
+                <a href="#" class="close">Continue</a>
+            </div>
+        </div>
+</div>
+    <script>
+        $(document).ready(function () {
+            $(".close").click(function () {
+                $(".popup").hide();
+            });
+        });
+    </script>
+    
+
+
     <!--Header-->
     <div id="header"> 
+        
 
         <div id="small-screen-nav">
           <div id="close"></div>
              <ul id="small-ul">
             <li><a href="#">Home</a></li>
             <li class="uc nav-item"><a href="#about" rel="“noreferrer”" class="nav-link active">About</a></li>
+            <li class="uc nav-item"><a href="#timeline" rel="“noreferrer”" class="nav-link active">Experience</a></li>
+            <li class="uc nav-item"><a href="#publications" rel="“noreferrer”" class="nav-link active">Publications</a></li>
+
             <li class="uc nav-item"><a href="#projects" rel="“noreferrer”" class="nav-link active">Projects</a></li>
 
-            <li class="uc nav-item"><a href="#publications" rel="“noreferrer”" class="nav-link active">Publications</a></li>
             <li class="uc nav-item"><a href="/blog" rel="“noreferrer”" class="nav-link active">Blog</a></li>
 
               <li>    </li>
@@ -67,9 +94,11 @@
             
             <li><a href="#">Home</a></li>
             <li class="uc nav-item"><a href="#about" rel="“noreferrer”" class="nav-link active">About</a></li>
+            <li class="uc nav-item"><a href="#timeline" rel="“noreferrer”" class="nav-link active">Experience</a></li>
+            <li class="uc nav-item"><a href="#publications" rel="“noreferrer”" class="nav-link active">Publications</a></li>
+            
             <li class="uc nav-item"><a href="#projects" rel="“noreferrer”" class="nav-link active">Projects</a></li>
 
-            <li class="uc nav-item"><a href="#publications" rel="“noreferrer”" class="nav-link active">Publications</a></li>
             <li class="uc nav-item"><a href="/blog"" rel="“noreferrer”" class="nav-link active">Blog</a></li>
             
             <li>    </li>
@@ -78,6 +107,7 @@
           <div id="nav-icon"></div>
         </div>              
       </div>
+   
     <!--Landing page div-->
     <div class="landing">
         <div class="img"><img src="asset/img/code.gif" alt="" /></div>
@@ -91,11 +121,13 @@
                 <div id="typed-strings">
                     <p>Machine Learning</p>
                     <p>Artificial Intelligence</p>
-                    <p>Cyber Security</p>
+                    <p>Federated Learning</p>
                     <p>Engineer 🔥</p>
                 </div> <span id="typed"></span>
             </div>
         </div>
+  
+
     </div>
     <div class="about" id="about">
         <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +150,7 @@
 		        <a class="resume" href="/resume.pdf">Resume</a>
             </div>
         </div>
-        <div class="container container1">
+        <div class="container container1" id="timeline">
             <div class="card card2 " data-aos="zoom-in-up" data-aos-duration="1000"> <span><b></b></span>
                 <div class="title">Experience
                     
@@ -130,6 +162,14 @@
                          <h3 class="titlee">Visiting Student</h3>
                          <p> University of Cambridge  </p>
                          <p>March 2023 - Present</p>
+                    </div>
+    
+                 </div>
+                <div class="cardd">
+                    <div class="info">
+                         <h3 class="titlee">Research Intern</h3>
+                         <p> Indian Institute of Technology, Delhi  </p>
+                         <p>Jan 2024 - Present</p>
                     </div>
     
                  </div>
