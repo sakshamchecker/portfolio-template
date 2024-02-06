@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>To my Heart</title>
+    <!-- add css for buttons -->
+    <style>
+        button[type=button_green] {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+
+        }
+        button:hover {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
+        button[type=button_red] {
+            background-color: #f44336; /* Red */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        button:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- add a GIF in center, a question as Will you be my valentine, and two buttons, yes or no-->
+    <center>
+        <!-- <img src="https://media.giphy.com/media/3o7aD5z5x8y3pMSXvS/giphy.gif" alt="Will you be my valentine?" width="500" height="500"> -->
+        <div class="tenor-gif-embed" data-postid="17699127675054366268" data-share-method="host" data-aspect-ratio="1.0082" data-width="100%"><a href="https://tenor.com/view/bear-bear-love-gif-17699127675054366268">Bear Bear Love GIF</a>from <a href="https://tenor.com/search/bear-gifs">Bear GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <br>
+        <!-- Button should have some animation, add CSS to it, colors and everything -->
+<!-- 
+        <button style="background-color: #4CAF50; /* Green */" type="button">Yes</button>
+        <button style="background-color: #f44336; /* Red */" type="button">No</button> -->
+        <!-- add better buttons, not just color, add animations too -->
+        <!-- add will you be my valientine question -->
+        <h1>Are you ready to join the Valentine Week Journey with me?</h1>
+        <br>
+        <!-- if yes is clicked, go to some page, if no is clicked, popup a GIF -->
+        <button type="button_green" onclick="location.href='yes.html';">Yes</button>
+        <button type="button_red" onclick="location.href='no.html';">No</button>
+    </center>
+    
+</body>
+</html>
